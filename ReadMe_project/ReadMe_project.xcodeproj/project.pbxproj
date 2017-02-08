@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		03DC33B11E4976920087C310 /* WriteViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03DC33B01E4976920087C310 /* WriteViewController2.swift */; };
+		03DC33B31E4976C50087C310 /* WriteViewController3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03DC33B21E4976C50087C310 /* WriteViewController3.swift */; };
+		03DC33B71E498DA80087C310 /* colorStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03DC33B61E498DA80087C310 /* colorStruct.swift */; };
+		03DC33B91E4999880087C310 /* style.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03DC33B81E4999880087C310 /* style.swift */; };
+		03DC33BB1E499D9C0087C310 /* tvnFont_korean.otf in Resources */ = {isa = PBXBuildFile; fileRef = 03DC33BA1E499D9C0087C310 /* tvnFont_korean.otf */; };
+		03DC33BE1E49AB380087C310 /* data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03DC33BD1E49AB380087C310 /* data.swift */; };
 		03EB73D81E48442D0000113D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03EB73D71E48442D0000113D /* AppDelegate.swift */; };
 		03EB73DA1E48442D0000113D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03EB73D91E48442D0000113D /* ViewController.swift */; };
 		03EB73DD1E48442D0000113D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03EB73DB1E48442D0000113D /* Main.storyboard */; };
@@ -15,6 +21,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		03DC33B01E4976920087C310 /* WriteViewController2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WriteViewController2.swift; sourceTree = "<group>"; };
+		03DC33B21E4976C50087C310 /* WriteViewController3.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WriteViewController3.swift; sourceTree = "<group>"; };
+		03DC33B61E498DA80087C310 /* colorStruct.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = colorStruct.swift; sourceTree = "<group>"; };
+		03DC33B81E4999880087C310 /* style.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = style.swift; sourceTree = "<group>"; };
+		03DC33BA1E499D9C0087C310 /* tvnFont_korean.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = tvnFont_korean.otf; sourceTree = "<group>"; };
+		03DC33BD1E49AB380087C310 /* data.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = data.swift; sourceTree = "<group>"; };
 		03EB73D41E48442D0000113D /* ReadMe_project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReadMe_project.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		03EB73D71E48442D0000113D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		03EB73D91E48442D0000113D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -35,6 +47,35 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		03DC33B41E4976DC0087C310 /* Write */ = {
+			isa = PBXGroup;
+			children = (
+				03EB73D91E48442D0000113D /* ViewController.swift */,
+				03DC33B01E4976920087C310 /* WriteViewController2.swift */,
+				03DC33B21E4976C50087C310 /* WriteViewController3.swift */,
+			);
+			name = Write;
+			sourceTree = "<group>";
+		};
+		03DC33B51E498D740087C310 /* Attribute */ = {
+			isa = PBXGroup;
+			children = (
+				03DC33BA1E499D9C0087C310 /* tvnFont_korean.otf */,
+				03DC33B61E498DA80087C310 /* colorStruct.swift */,
+				03DC33B81E4999880087C310 /* style.swift */,
+				03DC33BC1E49AB120087C310 /* data */,
+			);
+			name = Attribute;
+			sourceTree = "<group>";
+		};
+		03DC33BC1E49AB120087C310 /* data */ = {
+			isa = PBXGroup;
+			children = (
+				03DC33BD1E49AB380087C310 /* data.swift */,
+			);
+			name = data;
+			sourceTree = "<group>";
+		};
 		03EB73CB1E48442D0000113D = {
 			isa = PBXGroup;
 			children = (
@@ -55,7 +96,8 @@
 			isa = PBXGroup;
 			children = (
 				03EB73D71E48442D0000113D /* AppDelegate.swift */,
-				03EB73D91E48442D0000113D /* ViewController.swift */,
+				03DC33B41E4976DC0087C310 /* Write */,
+				03DC33B51E498D740087C310 /* Attribute */,
 				03EB73DB1E48442D0000113D /* Main.storyboard */,
 				03EB73DE1E48442D0000113D /* Assets.xcassets */,
 				03EB73E01E48442D0000113D /* LaunchScreen.storyboard */,
@@ -126,6 +168,7 @@
 				03EB73E21E48442D0000113D /* LaunchScreen.storyboard in Resources */,
 				03EB73DF1E48442D0000113D /* Assets.xcassets in Resources */,
 				03EB73DD1E48442D0000113D /* Main.storyboard in Resources */,
+				03DC33BB1E499D9C0087C310 /* tvnFont_korean.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -136,7 +179,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				03DC33BE1E49AB380087C310 /* data.swift in Sources */,
+				03DC33B71E498DA80087C310 /* colorStruct.swift in Sources */,
+				03DC33B91E4999880087C310 /* style.swift in Sources */,
+				03DC33B11E4976920087C310 /* WriteViewController2.swift in Sources */,
 				03EB73DA1E48442D0000113D /* ViewController.swift in Sources */,
+				03DC33B31E4976C50087C310 /* WriteViewController3.swift in Sources */,
 				03EB73D81E48442D0000113D /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -297,6 +345,7 @@
 				03EB73E81E48442D0000113D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
