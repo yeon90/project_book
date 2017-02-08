@@ -9,13 +9,34 @@
 import UIKit
 
 class WriteViewController3: UIViewController {
-
+    @IBOutlet weak var mainText: UITextView!
+    
+    var wData1 : Array<Any>
+    var wData2 : Array<Any>
+    var wData3 : Array<Any>
+    var wData : Array<Any>
+    
+    required init?(coder aDecoder: NSCoder) {
+        wData1 = []
+        wData2 = []
+        wData3 = []
+        wData = []
+        super.init(coder: aDecoder)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
     }
 
+    @IBAction func saveButtonTouched(_ sender: Any) {
+        wData3.append(mainText.text)
+        wData.append(wData1)
+        wData.append(wData2)
+        wData.append(wData3)
+        print(wData)
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

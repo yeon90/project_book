@@ -63,7 +63,6 @@
 				03DC33BA1E499D9C0087C310 /* tvnFont_korean.otf */,
 				03DC33B61E498DA80087C310 /* colorStruct.swift */,
 				03DC33B81E4999880087C310 /* style.swift */,
-				03DC33BC1E49AB120087C310 /* data */,
 			);
 			name = Attribute;
 			sourceTree = "<group>";
@@ -98,6 +97,7 @@
 				03EB73D71E48442D0000113D /* AppDelegate.swift */,
 				03DC33B41E4976DC0087C310 /* Write */,
 				03DC33B51E498D740087C310 /* Attribute */,
+				03DC33BC1E49AB120087C310 /* data */,
 				03EB73DB1E48442D0000113D /* Main.storyboard */,
 				03EB73DE1E48442D0000113D /* Assets.xcassets */,
 				03EB73E01E48442D0000113D /* LaunchScreen.storyboard */,

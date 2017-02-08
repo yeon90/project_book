@@ -75,7 +75,7 @@
                                     <color key="titleColor" red="0.017262615709999998" green="0.01760786802" blue="0.01760786802" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="Qss-oA-aiH" kind="show" id="zA5-is-kYF"/>
+                                    <action selector="nextButtonTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BHL-cl-DOt"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -95,7 +95,7 @@
         <!--Write View Controller2-->
         <scene sceneID="eRG-mW-1kO">
             <objects>
-                <viewController id="Qss-oA-aiH" customClass="WriteViewController2" customModule="ReadMe_project" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="write2" id="Qss-oA-aiH" customClass="WriteViewController2" customModule="ReadMe_project" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="zzW-qD-rtX"/>
                         <viewControllerLayoutGuide type="bottom" id="s9o-CT-j5b"/>
@@ -211,7 +211,7 @@
                                     <color key="titleColor" red="0.017262615706180942" green="0.017607868020304562" blue="0.017607868020304562" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="aZv-ej-F68" kind="show" id="Eht-Ee-kwD"/>
+                                    <action selector="nextButtonTouched:" destination="Qss-oA-aiH" eventType="touchUpInside" id="A4u-A5-2UN"/>
                                 </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="입력하세요" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="69P-VM-Mt6">
@@ -236,7 +236,7 @@
         <!--Write View Controller3-->
         <scene sceneID="G94-oN-IPE">
             <objects>
-                <viewController id="aZv-ej-F68" customClass="WriteViewController3" customModule="ReadMe_project" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="write3" id="aZv-ej-F68" customClass="WriteViewController3" customModule="ReadMe_project" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="SxV-Ul-WnA"/>
                         <viewControllerLayoutGuide type="bottom" id="h8w-gw-pIa"/>
@@ -266,10 +266,16 @@
                                 <state key="normal" title="SAVE">
                                     <color key="titleColor" red="0.28008982780000002" green="0.28569162440000001" blue="0.28569162440000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="saveButtonTouched:" destination="aZv-ej-F68" eventType="touchUpInside" id="34c-TY-1wy"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="mainText" destination="lac-On-6Ob" id="2Gz-z7-v5R"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KSV-Qs-WUj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
