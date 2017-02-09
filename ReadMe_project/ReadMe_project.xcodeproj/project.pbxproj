@@ -18,6 +18,8 @@
 		03EB73DD1E48442D0000113D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03EB73DB1E48442D0000113D /* Main.storyboard */; };
 		03EB73DF1E48442D0000113D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03EB73DE1E48442D0000113D /* Assets.xcassets */; };
 		03EB73E21E48442D0000113D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03EB73E01E48442D0000113D /* LaunchScreen.storyboard */; };
+		03EEAFF91E4C404900033028 /* ContentsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03EEAFF81E4C404900033028 /* ContentsTableViewController.swift */; };
+		03EEAFFB1E4C5E0400033028 /* ContentsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03EEAFFA1E4C5E0400033028 /* ContentsTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +36,8 @@
 		03EB73DE1E48442D0000113D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		03EB73E11E48442D0000113D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		03EB73E31E48442D0000113D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		03EEAFF81E4C404900033028 /* ContentsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentsTableViewController.swift; sourceTree = "<group>"; };
+		03EEAFFA1E4C5E0400033028 /* ContentsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentsTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +51,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0362196E1E4B0C4600512F28 /* contentView */ = {
+			isa = PBXGroup;
+			children = (
+				03EEAFF81E4C404900033028 /* ContentsTableViewController.swift */,
+				03EEAFFA1E4C5E0400033028 /* ContentsTableViewCell.swift */,
+			);
+			name = contentView;
+			sourceTree = "<group>";
+		};
 		03DC33B41E4976DC0087C310 /* Write */ = {
 			isa = PBXGroup;
 			children = (
@@ -96,6 +109,7 @@
 			children = (
 				03EB73D71E48442D0000113D /* AppDelegate.swift */,
 				03DC33B41E4976DC0087C310 /* Write */,
+				0362196E1E4B0C4600512F28 /* contentView */,
 				03DC33B51E498D740087C310 /* Attribute */,
 				03DC33BC1E49AB120087C310 /* data */,
 				03EB73DB1E48442D0000113D /* Main.storyboard */,
@@ -182,6 +196,8 @@
 				03DC33BE1E49AB380087C310 /* data.swift in Sources */,
 				03DC33B71E498DA80087C310 /* colorStruct.swift in Sources */,
 				03DC33B91E4999880087C310 /* style.swift in Sources */,
+				03EEAFFB1E4C5E0400033028 /* ContentsTableViewCell.swift in Sources */,
+				03EEAFF91E4C404900033028 /* ContentsTableViewController.swift in Sources */,
 				03DC33B11E4976920087C310 /* WriteViewController2.swift in Sources */,
 				03EB73DA1E48442D0000113D /* ViewController.swift in Sources */,
 				03DC33B31E4976C50087C310 /* WriteViewController3.swift in Sources */,

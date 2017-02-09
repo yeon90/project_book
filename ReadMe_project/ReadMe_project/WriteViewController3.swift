@@ -14,13 +14,16 @@ class WriteViewController3: UIViewController {
     var wData1 : Array<Any>
     var wData2 : Array<Any>
     var wData3 : Array<Any>
-    var wData : Array<Any>
+    var wData : Array<Array<Any>>
+    var dataModel : writeData
     
     required init?(coder aDecoder: NSCoder) {
         wData1 = []
         wData2 = []
         wData3 = []
         wData = []
+        dataModel = writeData()
+        
         super.init(coder: aDecoder)
     }
     
@@ -34,7 +37,14 @@ class WriteViewController3: UIViewController {
         wData.append(wData1)
         wData.append(wData2)
         wData.append(wData3)
-        print(wData)
+        dataModel.wData = wData
+       
+        self.popToRoot()
+        
+    }
+    
+    func popToRoot() {
+        self.navigationController?.popToRootViewController(animated: true)
     }
     
     override func didReceiveMemoryWarning() {

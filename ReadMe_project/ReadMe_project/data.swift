@@ -13,7 +13,9 @@ struct date {
     let formatter = DateFormatter()
 }
 
-struct dataWrite1 {
+struct writeData{
+    var wData : Array<Array<Any>> = [[]]
     
-    
+ 
 }
+ 
