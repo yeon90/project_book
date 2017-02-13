@@ -45,6 +45,9 @@ class ContentsTableViewController: UITableViewController{
         cell.bookTitle.text = String(describing: SomeClass.sharedInstance.wData[0][0])
         cell.dateLabel.text = String(describing: SomeClass.sharedInstance.wData[0][1])
         cell.pageLabel.text = String(describing: SomeClass.sharedInstance.wData[0][2])
+        cell.imageBackground.backgroundColor = UIColor.red
+        cell.imageText.text = String(describing: SomeClass.sharedInstance.wData[1][0])
+        
         // Configure the cell...
 
         return cell
@@ -59,6 +62,7 @@ class ContentsTableViewController: UITableViewController{
     }
     */
 
+    
     /*
     // Override to support editing the table view.
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {

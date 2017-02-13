@@ -13,7 +13,8 @@ class ContentsTableViewCell: UITableViewCell {
     @IBOutlet weak var bookTitle: UILabel!
     @IBOutlet weak var dateLabel: UILabel!
     @IBOutlet weak var pageLabel: UILabel!
-    
+    @IBOutlet weak var imageBackground: UIView!
+    @IBOutlet weak var imageText: UITextView!
 
     
     
