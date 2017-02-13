@@ -34,7 +34,7 @@ class WriteViewController3: UIViewController {
         SomeClass.sharedInstance.wData.append(wData1)
         SomeClass.sharedInstance.wData.append(wData2)
         SomeClass.sharedInstance.wData.append(wData3)
-       
+        
        // self.popToRoot()
         
     }
@@ -43,12 +43,12 @@ class WriteViewController3: UIViewController {
       /  self.navigationController?.popToRootViewController(animated: true)
     }
     */
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
-
     /*
     // MARK: - Navigation
 

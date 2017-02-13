@@ -23,7 +23,7 @@ class WriteViewController2: UIViewController {
     var wData2 : Array<Any>
     var styleArray : Array<Any>
     var colorArray : Array<Any>
-    
+    var styleArrayForWrite : Array<Any>
     required init?(coder aDecoder: NSCoder) {
         colorS = colorPalette()
         writeColorA = colorS.hexStringToUIColor(hex: "86C0C6")
@@ -35,6 +35,7 @@ class WriteViewController2: UIViewController {
         wData2 = []
         styleArray = []
         colorArray = []
+        styleArrayForWrite = []
         super.init(coder: aDecoder)
     }
     
@@ -69,23 +70,23 @@ class WriteViewController2: UIViewController {
     }
     
     @IBAction func changeStyleA(_ sender: Any) {
-    
+        //colorS.changeToStyleA(imageTextField, style:"A")
         imageTextField.textColor = UIColor.darkGray
-        imageTextField.font = UIFont(name: "tvN EnjoystoriesOTF", size: 25)
+        imageTextField.font = UIFont(name: "tvN EnjoystoriesOTF", size: 30)
         imageTextField.textAlignment = .center
         styleArray.append("A")
     }
     
     @IBAction func changeStyleB(_ sender: Any) {
         imageTextField.textColor = UIColor.black
-        imageTextField.font = UIFont(name: "tvN EnjoystoriesOTF", size: 25)
+        imageTextField.font = UIFont(name: "tvN EnjoystoriesOTF", size: 30)
         imageTextField.textAlignment = .center
         styleArray.append("B")
     }
     
     @IBAction func changeStyleC(_ sender: Any) {
         imageTextField.textColor = UIColor.white
-        imageTextField.font = UIFont(name: "tvN EnjoystoriesOTF", size: 25)
+        imageTextField.font = UIFont(name: "tvN EnjoystoriesOTF", size: 30)
         imageTextField.textAlignment = .center
         styleArray.append("C")
     }
@@ -102,13 +103,20 @@ class WriteViewController2: UIViewController {
         wData2.append(styleArray.popLast()!)
         w3.wData1 = wData1
         w3.wData2 = wData2
-        
+        SomeClass.sharedInstance.UIColorArray.append(writeColorA)
+        SomeClass.sharedInstance.UIColorArray.append(writeColorB)
+        SomeClass.sharedInstance.UIColorArray.append(writeColorC)
+        SomeClass.sharedInstance.UIColorArray.append(writeColorD)
+        SomeClass.sharedInstance.UIColorArray.append(writeColorE)
+            
         if let navigation = self.navigationController {
             navigation.pushViewController(w3, animated: true)
         }
         else {
             present(w3, animated: true, completion: nil)
         }
+        
+        
       
     }
     

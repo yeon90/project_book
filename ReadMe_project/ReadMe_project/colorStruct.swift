@@ -10,10 +10,6 @@ import UIKit
 
 struct colorPalette{
     
-
-    
-    
-    
     func hexStringToUIColor (hex:String) -> UIColor {
         var cString:String = hex.trimmingCharacters(in: .whitespacesAndNewlines).uppercased()
         
@@ -37,8 +33,52 @@ struct colorPalette{
     }
     
 
+    func changeToUIColor(input : String) -> UIColor {
+        var imageBackgroundColor : Any = UIColor.black
+        
+        
+        if (input == "A" ) {
+           imageBackgroundColor = SomeClass.sharedInstance.UIColorArray[0]
+        }
+        else if (input == "B" ) {
+            imageBackgroundColor = SomeClass.sharedInstance.UIColorArray[1]
+        }
+        else if (input == "C" ) {
+            imageBackgroundColor = SomeClass.sharedInstance.UIColorArray[2]
+        }
+        else if (input == "D" ) {
+            imageBackgroundColor = SomeClass.sharedInstance.UIColorArray[3]
+        }
+        else if (input == "E" ) {
+            imageBackgroundColor = SomeClass.sharedInstance.UIColorArray[4]
+        }
+        
+        return imageBackgroundColor as! UIColor
+    }
     
-    
-    
-    
+    func changeToStyle(input : String) -> Array<Any> {
+        var imageTextColor : Any = UIColor.black
+        var imageFont : Any = UIFont(name: "tvN EnjoystoriesOTF", size: 30) 
+        var imageAlignment : Any = NSTextAlignment.center
+        
+        var styleS = style()
+        
+        if (input == "A") {
+            imageTextColor = styleS.Astyle_textColor
+            imageFont = styleS.Astyle_font
+            imageAlignment = styleS.Astyle_textAlignment}
+        else if (input == "B") {
+            imageTextColor = styleS.Bstyle_textColor
+            imageFont = styleS.Bstyle_font
+            imageAlignment = styleS.Bstyle_textAlignment
+        }
+        else if (input == "C") {
+            imageTextColor = styleS.Cstyle_textColor
+            imageFont = styleS.Cstyle_font
+            imageAlignment = styleS.Cstyle_textAlignment
+        }
+        return [imageTextColor, imageFont, imageAlignment]
+        
+    }
 }
+

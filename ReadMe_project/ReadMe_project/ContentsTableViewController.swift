@@ -10,10 +10,31 @@ import UIKit
 
 class ContentsTableViewController: UITableViewController{
 
+    let colorS : colorPalette
+    var writeColorA : UIColor
+    var writeColorB : UIColor
+    var writeColorC : UIColor
+    var writeColorD : UIColor
+    var writeColorE : UIColor
+    var styleArray : Array<Any>
+    required init?(coder aDecoder: NSCoder) {
+        colorS = colorPalette()
+        writeColorA = colorS.hexStringToUIColor(hex: "86C0C6")
+        writeColorB = colorS.hexStringToUIColor(hex: "FBABA0")
+        writeColorC = colorS.hexStringToUIColor(hex: "D2E1A5")
+        writeColorD = colorS.hexStringToUIColor(hex: "D4C0D2")
+        writeColorE = colorS.hexStringToUIColor(hex: "6D90B0")
+        styleArray = []
+       
+        
+              super.init(coder: aDecoder)
+       
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        print(SomeClass.sharedInstance.wData[0])
+       
+        
         //tableView.dataSource = self
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -45,10 +66,16 @@ class ContentsTableViewController: UITableViewController{
         cell.bookTitle.text = String(describing: SomeClass.sharedInstance.wData[0][0])
         cell.dateLabel.text = String(describing: SomeClass.sharedInstance.wData[0][1])
         cell.pageLabel.text = String(describing: SomeClass.sharedInstance.wData[0][2])
-        cell.imageBackground.backgroundColor = UIColor.red
         cell.imageText.text = String(describing: SomeClass.sharedInstance.wData[1][0])
+    
+        cell.imageBackground.backgroundColor = colorS.changeToUIColor(input: String(describing: SomeClass.sharedInstance.wData[1][1]))
+        styleArray = colorS.changeToStyle(input: String(describing: SomeClass.sharedInstance.wData[1][2]))
+        cell.imageText.textColor = styleArray[0] as? UIColor
+        cell.imageText.font = styleArray[1] as? UIFont
+        cell.imageText.textAlignment = styleArray[2] as! NSTextAlignment
         
         // Configure the cell...
+        
 
         return cell
     }
