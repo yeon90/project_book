@@ -14,14 +14,7 @@ class ContentsTableViewCell: UITableViewCell {
     @IBOutlet weak var dateLabel: UILabel!
     @IBOutlet weak var pageLabel: UILabel!
     
-    required init?(coder aDecoder: NSCoder) {
-        bookTitle.text = ""
-        dateLabel.text = ""
-        pageLabel.text = ""
-        super.init(coder: aDecoder)
-        
-    }
-    
+
     
     
     override func awakeFromNib() {

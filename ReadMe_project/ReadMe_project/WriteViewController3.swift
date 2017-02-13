@@ -15,15 +15,12 @@ class WriteViewController3: UIViewController {
     var wData2 : Array<Any>
     var wData3 : Array<Any>
     var wData : Array<Array<Any>>
-    var dataModel : writeData
     
     required init?(coder aDecoder: NSCoder) {
         wData1 = []
         wData2 = []
         wData3 = []
         wData = []
-        dataModel = writeData()
-        
         super.init(coder: aDecoder)
     }
     
@@ -34,19 +31,18 @@ class WriteViewController3: UIViewController {
 
     @IBAction func saveButtonTouched(_ sender: Any) {
         wData3.append(mainText.text)
-        wData.append(wData1)
-        wData.append(wData2)
-        wData.append(wData3)
-        dataModel.wData = wData
+        SomeClass.sharedInstance.wData.append(wData1)
+        SomeClass.sharedInstance.wData.append(wData2)
+        SomeClass.sharedInstance.wData.append(wData3)
        
-        self.popToRoot()
+       // self.popToRoot()
         
     }
-    
+   /*
     func popToRoot() {
-        self.navigationController?.popToRootViewController(animated: true)
+      /  self.navigationController?.popToRootViewController(animated: true)
     }
-    
+    */
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

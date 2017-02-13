@@ -10,7 +10,6 @@
 		03DC33B11E4976920087C310 /* WriteViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03DC33B01E4976920087C310 /* WriteViewController2.swift */; };
 		03DC33B31E4976C50087C310 /* WriteViewController3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03DC33B21E4976C50087C310 /* WriteViewController3.swift */; };
 		03DC33B71E498DA80087C310 /* colorStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03DC33B61E498DA80087C310 /* colorStruct.swift */; };
-		03DC33B91E4999880087C310 /* style.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03DC33B81E4999880087C310 /* style.swift */; };
 		03DC33BB1E499D9C0087C310 /* tvnFont_korean.otf in Resources */ = {isa = PBXBuildFile; fileRef = 03DC33BA1E499D9C0087C310 /* tvnFont_korean.otf */; };
 		03DC33BE1E49AB380087C310 /* data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03DC33BD1E49AB380087C310 /* data.swift */; };
 		03EB73D81E48442D0000113D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03EB73D71E48442D0000113D /* AppDelegate.swift */; };
@@ -26,7 +25,6 @@
 		03DC33B01E4976920087C310 /* WriteViewController2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WriteViewController2.swift; sourceTree = "<group>"; };
 		03DC33B21E4976C50087C310 /* WriteViewController3.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WriteViewController3.swift; sourceTree = "<group>"; };
 		03DC33B61E498DA80087C310 /* colorStruct.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = colorStruct.swift; sourceTree = "<group>"; };
-		03DC33B81E4999880087C310 /* style.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = style.swift; sourceTree = "<group>"; };
 		03DC33BA1E499D9C0087C310 /* tvnFont_korean.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = tvnFont_korean.otf; sourceTree = "<group>"; };
 		03DC33BD1E49AB380087C310 /* data.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = data.swift; sourceTree = "<group>"; };
 		03EB73D41E48442D0000113D /* ReadMe_project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReadMe_project.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -75,7 +73,6 @@
 			children = (
 				03DC33BA1E499D9C0087C310 /* tvnFont_korean.otf */,
 				03DC33B61E498DA80087C310 /* colorStruct.swift */,
-				03DC33B81E4999880087C310 /* style.swift */,
 			);
 			name = Attribute;
 			sourceTree = "<group>";
@@ -195,7 +192,6 @@
 			files = (
 				03DC33BE1E49AB380087C310 /* data.swift in Sources */,
 				03DC33B71E498DA80087C310 /* colorStruct.swift in Sources */,
-				03DC33B91E4999880087C310 /* style.swift in Sources */,
 				03EEAFFB1E4C5E0400033028 /* ContentsTableViewCell.swift in Sources */,
 				03EEAFF91E4C404900033028 /* ContentsTableViewController.swift in Sources */,
 				03DC33B11E4976920087C310 /* WriteViewController2.swift in Sources */,

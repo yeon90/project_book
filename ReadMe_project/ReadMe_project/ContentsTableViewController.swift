@@ -10,12 +10,11 @@ import UIKit
 
 class ContentsTableViewController: UITableViewController{
 
-    @IBOutlet weak var bookTitle: UILabel!
-    var wData = writeData()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        print(SomeClass.sharedInstance.wData[0])
+        //tableView.dataSource = self
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -42,9 +41,10 @@ class ContentsTableViewController: UITableViewController{
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "contentsTable", for: indexPath)
-    
-        
+        let cell = tableView.dequeueReusableCell(withIdentifier: "contentsTable", for: indexPath) as! ContentsTableViewCell
+        cell.bookTitle.text = String(describing: SomeClass.sharedInstance.wData[0][0])
+        cell.dateLabel.text = String(describing: SomeClass.sharedInstance.wData[0][1])
+        cell.pageLabel.text = String(describing: SomeClass.sharedInstance.wData[0][2])
         // Configure the cell...
 
         return cell

@@ -13,9 +13,17 @@ struct date {
     let formatter = DateFormatter()
 }
 
-struct writeData{
-    var wData : Array<Array<Any>> = [[]]
-    
- 
+
+private let WriteData = SomeClass()
+
+class SomeClass {
+    var wData : Array<Array<Any>> = []
+    class var sharedInstance: SomeClass {
+        return WriteData
+    }
 }
- 
+
+/*class SomeClass {
+    static let sharedInstance = SomeClass()
+    var wData : Array<Array<Any>> = [[]]
+}*/
