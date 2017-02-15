@@ -9,10 +9,11 @@
 /* Begin PBXBuildFile section */
 		0311A3011E52D02C003011D9 /* DataStructS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0311A3001E52D02C003011D9 /* DataStructS.swift */; };
 		032E4D111E51ABB10089BACF /* DataStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 032E4D101E51ABB10089BACF /* DataStruct.swift */; };
+		03D092021E5433C30079983F /* ContentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D092011E5433C30079983F /* ContentsViewController.swift */; };
 		03DC33B11E4976920087C310 /* WriteViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03DC33B01E4976920087C310 /* WriteViewController2.swift */; };
 		03DC33B31E4976C50087C310 /* WriteViewController3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03DC33B21E4976C50087C310 /* WriteViewController3.swift */; };
 		03DC33BB1E499D9C0087C310 /* tvnFont_korean.otf in Resources */ = {isa = PBXBuildFile; fileRef = 03DC33BA1E499D9C0087C310 /* tvnFont_korean.otf */; };
-		03DC33BE1E49AB380087C310 /* data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03DC33BD1E49AB380087C310 /* data.swift */; };
+		03DC33BE1E49AB380087C310 /* StyleData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03DC33BD1E49AB380087C310 /* StyleData.swift */; };
 		03EB73D81E48442D0000113D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03EB73D71E48442D0000113D /* AppDelegate.swift */; };
 		03EB73DA1E48442D0000113D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03EB73D91E48442D0000113D /* ViewController.swift */; };
 		03EB73DD1E48442D0000113D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03EB73DB1E48442D0000113D /* Main.storyboard */; };
@@ -26,10 +27,11 @@
 /* Begin PBXFileReference section */
 		0311A3001E52D02C003011D9 /* DataStructS.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataStructS.swift; sourceTree = "<group>"; };
 		032E4D101E51ABB10089BACF /* DataStruct.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataStruct.swift; sourceTree = "<group>"; };
+		03D092011E5433C30079983F /* ContentsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ContentsViewController.swift; path = ../../../ReadMe_project/ContentsViewController.swift; sourceTree = "<group>"; };
 		03DC33B01E4976920087C310 /* WriteViewController2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WriteViewController2.swift; sourceTree = "<group>"; };
 		03DC33B21E4976C50087C310 /* WriteViewController3.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WriteViewController3.swift; sourceTree = "<group>"; };
 		03DC33BA1E499D9C0087C310 /* tvnFont_korean.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = tvnFont_korean.otf; sourceTree = "<group>"; };
-		03DC33BD1E49AB380087C310 /* data.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = data.swift; sourceTree = "<group>"; };
+		03DC33BD1E49AB380087C310 /* StyleData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StyleData.swift; sourceTree = "<group>"; };
 		03EB73D41E48442D0000113D /* ReadMe_project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReadMe_project.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		03EB73D71E48442D0000113D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		03EB73D91E48442D0000113D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -61,6 +63,7 @@
 			children = (
 				03EEAFF81E4C404900033028 /* ContentsTableViewController.swift */,
 				03EEAFFA1E4C5E0400033028 /* ContentsTableViewCell.swift */,
+				03D092011E5433C30079983F /* ContentsViewController.swift */,
 			);
 			name = contentView;
 			sourceTree = "<group>";
@@ -79,7 +82,7 @@
 			isa = PBXGroup;
 			children = (
 				03DC33BA1E499D9C0087C310 /* tvnFont_korean.otf */,
-				03DC33BD1E49AB380087C310 /* data.swift */,
+				03DC33BD1E49AB380087C310 /* StyleData.swift */,
 			);
 			name = Attribute;
 			sourceTree = "<group>";
@@ -269,9 +272,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				032E4D111E51ABB10089BACF /* DataStruct.swift in Sources */,
-				03DC33BE1E49AB380087C310 /* data.swift in Sources */,
+				03DC33BE1E49AB380087C310 /* StyleData.swift in Sources */,
 				03EEAFFB1E4C5E0400033028 /* ContentsTableViewCell.swift in Sources */,
 				03EEAFF91E4C404900033028 /* ContentsTableViewController.swift in Sources */,
+				03D092021E5433C30079983F /* ContentsViewController.swift in Sources */,
 				03DC33B11E4976920087C310 /* WriteViewController2.swift in Sources */,
 				03EB73DA1E48442D0000113D /* ViewController.swift in Sources */,
 				0311A3011E52D02C003011D9 /* DataStructS.swift in Sources */,

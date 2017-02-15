@@ -67,18 +67,40 @@ class ContentsTableViewController: UITableViewController{
         cell.dateLabel.text = String(describing: DataStructS.sharedInstance.wData[indexPath.row].w1_date)
         cell.pageLabel.text = String(describing: DataStructS.sharedInstance.wData[indexPath.row].w1_page)
         cell.imageText.text = String(describing: DataStructS.sharedInstance.wData[indexPath.row].w2_imageText)
+        cell.imageText.isEditable = false
         cell.imageBackground.backgroundColor = colorS.changeToUIColor(input: String(describing: DataStructS.sharedInstance.wData[indexPath.row].w2_background))
         colorS.changeStyle(textField: cell.imageText, style: String(describing: DataStructS.sharedInstance.wData[indexPath.row].w2_style))
           // Configure the cell...
       return cell
     }
+
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let contentsView :  ContentsViewController = storyboard?.instantiateViewController(withIdentifier:"contents") as! ContentsViewController
+        contentsView.indexPathRow = indexPath.row
+        
+        if let navigation = self.navigationController {
+            navigation.pushViewController(contentsView, animated: true)
+        }
+        else {
+            present(contentsView, animated: true, completion: nil)
+        }
+        
+    }
+    
+  /*  @IBAction func imageTouched(_ sender: Any) {
+        
+    }*/
     
     @IBAction func addButtonTouched(_ sender: Any) {
         popToRoot()
     }
     func popToRoot() {
-          self.navigationController?.popToRootViewController(animated: true)
+        self.navigationController?.popToRootViewController(animated: true)
     }
+    
+    
+ 
+    
 
     /*
     // Override to support conditional editing of the table view.

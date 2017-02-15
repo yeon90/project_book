@@ -17,6 +17,7 @@ class DataStructS {
     var style_textColor = UIColor.black
     var style_font = UIFont(name: "tvN EnjoystoriesOTF", size: 30)
     var style_textAlignment = NSTextAlignment.center
+   
     class var sharedInstance: DataStructS{
         return Data
     }

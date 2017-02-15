@@ -72,39 +72,16 @@ class WriteViewController2: UIViewController {
     @IBAction func changeStyleA(_ sender: Any) {
         //colorS.changeToStyleA(imageTextField, style:"A")
         colorS.changeStyle(textField: imageTextField, style: "A")
-       
-        /*  imageTextField.textColor = UIColor.darkGray
-        imageTextField.font = UIFont(name: "tvN EnjoystoriesOTF", size: 30)
-        imageTextField.textAlignment = .center
-        DataStructS.sharedInstance.style_textColor = imageTextField.textColor!
-        DataStructS.sharedInstance.style_font = imageTextField.font
-        DataStructS.sharedInstance.style_textAlignment = imageTextField.textAlignment*/
-    
         styleArray.append("A")
     }
     
     @IBAction func changeStyleB(_ sender: Any) {
         colorS.changeStyle(textField: imageTextField, style: "B")
-        /*
-        imageTextField.textColor = UIColor.black
-        imageTextField.font = UIFont(name: "tvN EnjoystoriesOTF", size: 30)
-        imageTextField.textAlignment = .center
-        DataStructS.sharedInstance.style_textColor = imageTextField.textColor!
-        DataStructS.sharedInstance.style_font = imageTextField.font
-        DataStructS.sharedInstance.style_textAlignment = imageTextField.textAlignment*/
         styleArray.append("B")
     }
     
     @IBAction func changeStyleC(_ sender: Any) {
         colorS.changeStyle(textField: imageTextField, style: "C")
-/*
-        imageTextField.textColor = UIColor.white
-        imageTextField.font = UIFont(name: "tvN EnjoystoriesOTF", size: 30)
-        imageTextField.textAlignment = .center
-        DataStructS.sharedInstance.style_textColor = imageTextField.textColor!
-        DataStructS.sharedInstance.style_font = imageTextField.font
-        DataStructS.sharedInstance.style_textAlignment = imageTextField.textAlignment*/
-        
         styleArray.append("C")
     }
     

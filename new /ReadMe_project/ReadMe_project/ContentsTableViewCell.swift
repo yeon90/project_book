@@ -16,12 +16,12 @@ class ContentsTableViewCell: UITableViewCell {
     @IBOutlet weak var imageBackground: UIView!
     @IBOutlet weak var imageText: UITextView!
 
-    
-    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
     }
+    
+    
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)

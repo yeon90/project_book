@@ -82,7 +82,7 @@ struct date {
     let formatter = DateFormatter()
 }
 
-struct style {
+/*struct style {
     var Astyle_textColor = UIColor.darkGray
     var Astyle_font = UIFont(name: "tvN EnjoystoriesOTF", size: 30)
     var Astyle_textAlignment = NSTextAlignment.center
@@ -92,7 +92,7 @@ struct style {
     var Cstyle_textColor = UIColor.white
     var Cstyle_font = UIFont(name: "tvN EnjoystoriesOTF", size: 30)
     var Cstyle_textAlignment = NSTextAlignment.center
-}
+}*/
 
 
 

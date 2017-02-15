@@ -44,7 +44,7 @@ class WriteViewController3: UIViewController {
         dataStructA.w2_background = wData2[1] as! String
         dataStructA.w2_style = wData2[2] as! String
         dataStructA.w3_mainText = wData3[0] as! String
-        DataStructS.sharedInstance.wData.append(dataStructA)
+        DataStructS.sharedInstance.wData.insert(dataStructA , at: 0)
         
     }
   
