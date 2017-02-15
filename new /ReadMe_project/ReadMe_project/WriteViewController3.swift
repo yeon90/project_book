@@ -15,7 +15,7 @@ class WriteViewController3: UIViewController {
     var wData2 : Array<Any>
     var wData3 : Array<Any>
     var wData : Array<Array<Any>>
-    var dataStructA : dataStruct
+    var dataStructA : DataStruct
     
     required init?(coder aDecoder: NSCoder) {
      
@@ -23,7 +23,7 @@ class WriteViewController3: UIViewController {
         wData2 = []
         wData3 = []
         wData = []
-        dataStructA = dataStruct()
+        dataStructA = DataStruct()
         
         super.init(coder: aDecoder)
     }
@@ -46,14 +46,8 @@ class WriteViewController3: UIViewController {
         dataStructA.w3_mainText = wData3[0] as! String
         DataStructS.sharedInstance.wData.append(dataStructA)
         
-        print("프린트값은", DataStructS.sharedInstance.wData)
-        
     }
-   /*
-    func popToRoot() {
-      /  self.navigationController?.popToRootViewController(animated: true)
-    }
-    */
+  
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

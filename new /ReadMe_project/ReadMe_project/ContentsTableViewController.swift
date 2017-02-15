@@ -68,15 +68,9 @@ class ContentsTableViewController: UITableViewController{
         cell.pageLabel.text = String(describing: DataStructS.sharedInstance.wData[indexPath.row].w1_page)
         cell.imageText.text = String(describing: DataStructS.sharedInstance.wData[indexPath.row].w2_imageText)
         cell.imageBackground.backgroundColor = colorS.changeToUIColor(input: String(describing: DataStructS.sharedInstance.wData[indexPath.row].w2_background))
-        styleArray = colorS.changeToStyle(input: String(describing: DataStructS.sharedInstance.wData[indexPath.row].w2_style))
-        cell.imageText.textColor = styleArray[0] as? UIColor
-        cell.imageText.font = styleArray[1] as? UIFont
-        cell.imageText.textAlignment = styleArray[2] as! NSTextAlignment
-        
-        // Configure the cell...
-        
-
-        return cell
+        colorS.changeStyle(textField: cell.imageText, style: String(describing: DataStructS.sharedInstance.wData[indexPath.row].w2_style))
+          // Configure the cell...
+      return cell
     }
     
     @IBAction func addButtonTouched(_ sender: Any) {

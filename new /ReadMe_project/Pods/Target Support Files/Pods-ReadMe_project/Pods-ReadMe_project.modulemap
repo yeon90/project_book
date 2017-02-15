@@ -1,0 +1,6 @@
+framework module Pods_ReadMe_project {
+  umbrella header "Pods-ReadMe_project-umbrella.h"
+
+  export *
+  module * { export * }
+}

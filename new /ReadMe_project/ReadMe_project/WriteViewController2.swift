@@ -71,30 +71,42 @@ class WriteViewController2: UIViewController {
     
     @IBAction func changeStyleA(_ sender: Any) {
         //colorS.changeToStyleA(imageTextField, style:"A")
-        imageTextField.textColor = UIColor.darkGray
+        colorS.changeStyle(textField: imageTextField, style: "A")
+       
+        /*  imageTextField.textColor = UIColor.darkGray
         imageTextField.font = UIFont(name: "tvN EnjoystoriesOTF", size: 30)
         imageTextField.textAlignment = .center
+        DataStructS.sharedInstance.style_textColor = imageTextField.textColor!
+        DataStructS.sharedInstance.style_font = imageTextField.font
+        DataStructS.sharedInstance.style_textAlignment = imageTextField.textAlignment*/
+    
         styleArray.append("A")
     }
     
     @IBAction func changeStyleB(_ sender: Any) {
+        colorS.changeStyle(textField: imageTextField, style: "B")
+        /*
         imageTextField.textColor = UIColor.black
         imageTextField.font = UIFont(name: "tvN EnjoystoriesOTF", size: 30)
         imageTextField.textAlignment = .center
+        DataStructS.sharedInstance.style_textColor = imageTextField.textColor!
+        DataStructS.sharedInstance.style_font = imageTextField.font
+        DataStructS.sharedInstance.style_textAlignment = imageTextField.textAlignment*/
         styleArray.append("B")
     }
     
     @IBAction func changeStyleC(_ sender: Any) {
+        colorS.changeStyle(textField: imageTextField, style: "C")
+/*
         imageTextField.textColor = UIColor.white
         imageTextField.font = UIFont(name: "tvN EnjoystoriesOTF", size: 30)
         imageTextField.textAlignment = .center
+        DataStructS.sharedInstance.style_textColor = imageTextField.textColor!
+        DataStructS.sharedInstance.style_font = imageTextField.font
+        DataStructS.sharedInstance.style_textAlignment = imageTextField.textAlignment*/
+        
         styleArray.append("C")
     }
-    
-  
-    
-    
-    
     
     @IBAction func nextButtonTouched(_ sender: Any) {
         let w3 :  WriteViewController3 = storyboard?.instantiateViewController(withIdentifier:"write3") as! WriteViewController3
@@ -103,11 +115,11 @@ class WriteViewController2: UIViewController {
         wData2.append(styleArray.popLast()!)
         w3.wData1 = wData1
         w3.wData2 = wData2
-        SomeClass.sharedInstance.UIColorArray.append(writeColorA)
-        SomeClass.sharedInstance.UIColorArray.append(writeColorB)
-        SomeClass.sharedInstance.UIColorArray.append(writeColorC)
-        SomeClass.sharedInstance.UIColorArray.append(writeColorD)
-        SomeClass.sharedInstance.UIColorArray.append(writeColorE)
+        DataStructS.sharedInstance.UIColorArray.append(writeColorA)
+        DataStructS.sharedInstance.UIColorArray.append(writeColorB)
+        DataStructS.sharedInstance.UIColorArray.append(writeColorC)
+        DataStructS.sharedInstance.UIColorArray.append(writeColorD)
+        DataStructS.sharedInstance.UIColorArray.append(writeColorE)
             
         if let navigation = self.navigationController {
             navigation.pushViewController(w3, animated: true)

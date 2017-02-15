@@ -8,10 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		0311A3011E52D02C003011D9 /* DataStructS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0311A3001E52D02C003011D9 /* DataStructS.swift */; };
-		032E4D111E51ABB10089BACF /* dataStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 032E4D101E51ABB10089BACF /* dataStruct.swift */; };
+		032E4D111E51ABB10089BACF /* DataStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 032E4D101E51ABB10089BACF /* DataStruct.swift */; };
 		03DC33B11E4976920087C310 /* WriteViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03DC33B01E4976920087C310 /* WriteViewController2.swift */; };
 		03DC33B31E4976C50087C310 /* WriteViewController3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03DC33B21E4976C50087C310 /* WriteViewController3.swift */; };
-		03DC33B71E498DA80087C310 /* colorPalette.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03DC33B61E498DA80087C310 /* colorPalette.swift */; };
 		03DC33BB1E499D9C0087C310 /* tvnFont_korean.otf in Resources */ = {isa = PBXBuildFile; fileRef = 03DC33BA1E499D9C0087C310 /* tvnFont_korean.otf */; };
 		03DC33BE1E49AB380087C310 /* data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03DC33BD1E49AB380087C310 /* data.swift */; };
 		03EB73D81E48442D0000113D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03EB73D71E48442D0000113D /* AppDelegate.swift */; };
@@ -21,14 +20,14 @@
 		03EB73E21E48442D0000113D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03EB73E01E48442D0000113D /* LaunchScreen.storyboard */; };
 		03EEAFF91E4C404900033028 /* ContentsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03EEAFF81E4C404900033028 /* ContentsTableViewController.swift */; };
 		03EEAFFB1E4C5E0400033028 /* ContentsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03EEAFFA1E4C5E0400033028 /* ContentsTableViewCell.swift */; };
+		40D097E8DCF997799F6722B4 /* Pods_ReadMe_project.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7291752860773BC9078068FD /* Pods_ReadMe_project.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0311A3001E52D02C003011D9 /* DataStructS.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataStructS.swift; sourceTree = "<group>"; };
-		032E4D101E51ABB10089BACF /* dataStruct.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = dataStruct.swift; sourceTree = "<group>"; };
+		032E4D101E51ABB10089BACF /* DataStruct.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataStruct.swift; sourceTree = "<group>"; };
 		03DC33B01E4976920087C310 /* WriteViewController2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WriteViewController2.swift; sourceTree = "<group>"; };
 		03DC33B21E4976C50087C310 /* WriteViewController3.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WriteViewController3.swift; sourceTree = "<group>"; };
-		03DC33B61E498DA80087C310 /* colorPalette.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = colorPalette.swift; sourceTree = "<group>"; };
 		03DC33BA1E499D9C0087C310 /* tvnFont_korean.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = tvnFont_korean.otf; sourceTree = "<group>"; };
 		03DC33BD1E49AB380087C310 /* data.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = data.swift; sourceTree = "<group>"; };
 		03EB73D41E48442D0000113D /* ReadMe_project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReadMe_project.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -40,6 +39,9 @@
 		03EB73E31E48442D0000113D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		03EEAFF81E4C404900033028 /* ContentsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentsTableViewController.swift; sourceTree = "<group>"; };
 		03EEAFFA1E4C5E0400033028 /* ContentsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentsTableViewCell.swift; sourceTree = "<group>"; };
+		7291752860773BC9078068FD /* Pods_ReadMe_project.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ReadMe_project.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8DC06EFE2311C57D10559C04 /* Pods-ReadMe_project.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReadMe_project.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ReadMe_project/Pods-ReadMe_project.debug.xcconfig"; sourceTree = "<group>"; };
+		97345725A1754722AD570380 /* Pods-ReadMe_project.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReadMe_project.release.xcconfig"; path = "Pods/Target Support Files/Pods-ReadMe_project/Pods-ReadMe_project.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				40D097E8DCF997799F6722B4 /* Pods_ReadMe_project.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,7 +79,6 @@
 			isa = PBXGroup;
 			children = (
 				03DC33BA1E499D9C0087C310 /* tvnFont_korean.otf */,
-				03DC33B61E498DA80087C310 /* colorPalette.swift */,
 				03DC33BD1E49AB380087C310 /* data.swift */,
 			);
 			name = Attribute;
@@ -85,7 +87,7 @@
 		03DC33BC1E49AB120087C310 /* data */ = {
 			isa = PBXGroup;
 			children = (
-				032E4D101E51ABB10089BACF /* dataStruct.swift */,
+				032E4D101E51ABB10089BACF /* DataStruct.swift */,
 				0311A3001E52D02C003011D9 /* DataStructS.swift */,
 			);
 			name = data;
@@ -96,6 +98,8 @@
 			children = (
 				03EB73D61E48442D0000113D /* ReadMe_project */,
 				03EB73D51E48442D0000113D /* Products */,
+				B5FBEA130700CC4486305870 /* Pods */,
+				C8E9B008D509C78BA1673F24 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -123,6 +127,23 @@
 			path = ReadMe_project;
 			sourceTree = "<group>";
 		};
+		B5FBEA130700CC4486305870 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8DC06EFE2311C57D10559C04 /* Pods-ReadMe_project.debug.xcconfig */,
+				97345725A1754722AD570380 /* Pods-ReadMe_project.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		C8E9B008D509C78BA1673F24 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7291752860773BC9078068FD /* Pods_ReadMe_project.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -130,9 +151,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 03EB73E61E48442D0000113D /* Build configuration list for PBXNativeTarget "ReadMe_project" */;
 			buildPhases = (
+				9A726F3FAFAE33E9FF710EB0 /* [CP] Check Pods Manifest.lock */,
 				03EB73D01E48442D0000113D /* Sources */,
 				03EB73D11E48442D0000113D /* Frameworks */,
 				03EB73D21E48442D0000113D /* Resources */,
+				418CF9BC4439515F2D26A682 /* [CP] Embed Pods Frameworks */,
+				64264BCB31256EA1FA292D45 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -191,14 +215,61 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		418CF9BC4439515F2D26A682 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ReadMe_project/Pods-ReadMe_project-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		64264BCB31256EA1FA292D45 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ReadMe_project/Pods-ReadMe_project-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9A726F3FAFAE33E9FF710EB0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		03EB73D01E48442D0000113D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				032E4D111E51ABB10089BACF /* dataStruct.swift in Sources */,
+				032E4D111E51ABB10089BACF /* DataStruct.swift in Sources */,
 				03DC33BE1E49AB380087C310 /* data.swift in Sources */,
-				03DC33B71E498DA80087C310 /* colorPalette.swift in Sources */,
 				03EEAFFB1E4C5E0400033028 /* ContentsTableViewCell.swift in Sources */,
 				03EEAFF91E4C404900033028 /* ContentsTableViewController.swift in Sources */,
 				03DC33B11E4976920087C310 /* WriteViewController2.swift in Sources */,
@@ -324,6 +395,7 @@
 		};
 		03EB73E71E48442D0000113D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8DC06EFE2311C57D10559C04 /* Pods-ReadMe_project.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = ReadMe_project/Info.plist;
@@ -336,6 +408,7 @@
 		};
 		03EB73E81E48442D0000113D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 97345725A1754722AD570380 /* Pods-ReadMe_project.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = ReadMe_project/Info.plist;

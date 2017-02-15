@@ -15,12 +15,12 @@ class ViewController: UIViewController {
     @IBOutlet weak var pageInput: UITextField!
     
     var date1 : date
-    var dataStructA : dataStruct
+    var dataStructA : DataStruct
     
     required init?(coder aDecoder: NSCoder) {
         date1 = date()
                 date1.formatter.dateFormat = "yyyy.MM.dd"
-        dataStructA = dataStruct()
+        dataStructA = DataStruct()
         super.init(coder: aDecoder)
     }
     
