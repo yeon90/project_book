@@ -51,6 +51,9 @@ struct colorPalette{
         else if (input == "E" ) {
             imageBackgroundColor = DataStructS.sharedInstance.UIColorArray[4]
         }
+        else {
+            imageBackgroundColor = UIColor.clear
+        }
         
         return imageBackgroundColor as! UIColor
     }
@@ -65,13 +68,18 @@ struct colorPalette{
         }
         else if (style == "B") {
             textField.textColor = UIColor.black
-            textField.font = UIFont(name: "tvN EnjoystoriesOTF", size: 30)
+            textField.font = UIFont(name: "Nanum Pen Script", size: 20)
             textField.textAlignment = NSTextAlignment.center
         }
         else if (style == "C") {
             textField.textColor = UIColor.white
             textField.font = UIFont(name: "tvN EnjoystoriesOTF", size: 30)
             textField.textAlignment = NSTextAlignment.center
+        }
+        else {
+            textField.textColor = UIColor.black
+            textField.font = UIFont(name: "System", size: 17)
+            textField.textAlignment = NSTextAlignment.left
         }
     }
 }

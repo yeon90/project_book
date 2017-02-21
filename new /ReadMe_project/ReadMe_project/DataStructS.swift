@@ -12,8 +12,9 @@ private let Data = DataStructS()
 
 class DataStructS {
     var wData : Array<DataStruct> = []
-    var UIColorArray : Array<Any> = []
     
+    
+    var UIColorArray : Array<Any> = []
     var style_textColor = UIColor.black
     var style_font = UIFont(name: "tvN EnjoystoriesOTF", size: 30)
     var style_textAlignment = NSTextAlignment.center

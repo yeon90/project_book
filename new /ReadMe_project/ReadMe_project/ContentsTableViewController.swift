@@ -7,9 +7,13 @@
 //
 
 import UIKit
+import RealmSwift
 
 class ContentsTableViewController: UITableViewController{
 
+    let realm = try! Realm()
+    let result = try! Realm().objects(inputData.self)
+    
     let colorS : colorPalette
     var writeColorA : UIColor
     var writeColorB : UIColor
@@ -63,12 +67,14 @@ class ContentsTableViewController: UITableViewController{
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "contentsTable", for: indexPath) as! ContentsTableViewCell
-        cell.bookTitle.text = String(describing: DataStructS.sharedInstance.wData[indexPath.row].w1_bookTitle)
+        cell.bookTitle.text = result[indexPath.row].w1_bookTitle
+            /*String(describing: DataStructS.sharedInstance.wData[indexPath.row].w1_bookTitle)*/
         cell.dateLabel.text = String(describing: DataStructS.sharedInstance.wData[indexPath.row].w1_date)
         cell.pageLabel.text = String(describing: DataStructS.sharedInstance.wData[indexPath.row].w1_page)
         cell.imageText.text = String(describing: DataStructS.sharedInstance.wData[indexPath.row].w2_imageText)
         cell.imageText.isEditable = false
         cell.imageBackground.backgroundColor = colorS.changeToUIColor(input: String(describing: DataStructS.sharedInstance.wData[indexPath.row].w2_background))
+        cell.imageBackgroundImage.image = DataStructS.sharedInstance.wData[indexPath.row].w2_backgroundimage
         colorS.changeStyle(textField: cell.imageText, style: String(describing: DataStructS.sharedInstance.wData[indexPath.row].w2_style))
           // Configure the cell...
       return cell
@@ -87,9 +93,7 @@ class ContentsTableViewController: UITableViewController{
         
     }
     
-  /*  @IBAction func imageTouched(_ sender: Any) {
-        
-    }*/
+
     
     @IBAction func addButtonTouched(_ sender: Any) {
         popToRoot()

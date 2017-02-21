@@ -9,8 +9,8 @@
 import UIKit
 
 class WriteViewController3: UIViewController {
+   
     @IBOutlet weak var mainText: UITextView!
-    
     var wData1 : Array<Any>
     var wData2 : Array<Any>
     var wData3 : Array<Any>

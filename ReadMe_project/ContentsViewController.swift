@@ -36,6 +36,7 @@ class ContentsViewController: UIViewController {
         colorS.changeStyle(textField: imageTextView, style: String(describing: DataStructS.sharedInstance.wData[indexPathRow].w2_style))
         mainTextView.text = String(describing: DataStructS.sharedInstance.wData[indexPathRow].w3_mainText)
         // Do any additional setup after loading the view.
+        imageView.image = DataStructS.sharedInstance.wData[indexPathRow].w2_backgroundimage
     }
 
     override func didReceiveMemoryWarning() {
@@ -43,6 +44,9 @@ class ContentsViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func editButtonTouched(_ sender: Any) {
+        
+    }
 
     /*
     // MARK: - Navigation

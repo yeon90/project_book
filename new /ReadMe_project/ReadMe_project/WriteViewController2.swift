@@ -8,10 +8,13 @@
 
 import UIKit
 
-class WriteViewController2: UIViewController {
+class WriteViewController2: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate{
 
     @IBOutlet weak var imageBackground: UIView!
     @IBOutlet weak var imageTextField: UITextView!
+    @IBOutlet weak var imageView: UIImageView!
+    @IBOutlet weak var backgroundScrollView: UIScrollView!
+    @IBOutlet weak var styleScrollView: UIScrollView!
     
     let colorS : colorPalette
     var writeColorA : UIColor
@@ -21,9 +24,10 @@ class WriteViewController2: UIViewController {
     var writeColorE : UIColor
     var wData1 : Array<Any>
     var wData2 : Array<Any>
-    var styleArray : Array<Any>
-    var colorArray : Array<Any>
+    var styleValue : Any
+    var colorValue : Any
     var styleArrayForWrite : Array<Any>
+    
     required init?(coder aDecoder: NSCoder) {
         colorS = colorPalette()
         writeColorA = colorS.hexStringToUIColor(hex: "86C0C6")
@@ -33,63 +37,92 @@ class WriteViewController2: UIViewController {
         writeColorE = colorS.hexStringToUIColor(hex: "6D90B0")
         wData1 = []
         wData2 = []
-        styleArray = []
-        colorArray = []
+        styleValue = ""
+        colorValue = ""
         styleArrayForWrite = []
         super.init(coder: aDecoder)
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-   
+     
+        backgroundScrollView.contentSize = CGSize(width: 1000, height: 40)
+        styleScrollView.contentSize = CGSize(width: 1000, height: 130)
+        
+        
         // Do any additional setup after loading the view.
     }
+   
+   
+    @IBAction func galleryButtonTouched(_ sender: Any) {
+        let pickerController = UIImagePickerController()
+        pickerController.sourceType = .photoLibrary
+        pickerController.delegate = self
+        present(pickerController, animated: true, completion: nil)
+        imageBackground.backgroundColor = UIColor.clear
+    }
+   
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
+        if let image = info[UIImagePickerControllerOriginalImage] {
+
+            imageView.image = image as? UIImage
+            colorValue = imageView.image
+        }
+        else {
+            print("값이 없음")
+        }
+        
+        picker.dismiss(animated: true, completion: nil)
+    }
+    
     
     @IBAction func changeColorA(_ sender: Any) {
      imageBackground.backgroundColor = writeColorA
-     colorArray.append("A")
+     colorValue = "A"
     }
   
     @IBAction func changeColorB(_ sender: Any) {
         imageBackground.backgroundColor = writeColorB
-        colorArray.append("B")
+       colorValue = "B"
     }
     @IBAction func changeColorC(_ sender: Any) {
         imageBackground.backgroundColor = writeColorC
-        colorArray.append("C")
+        colorValue = "C"
     }
     
     @IBAction func changeColorD(_ sender: Any) {
         imageBackground.backgroundColor = writeColorD
-        colorArray.append("D")
+       colorValue = "D"
     }
     
     @IBAction func changeColorE(_ sender: Any) {
         imageBackground.backgroundColor = writeColorE
-        colorArray.append("E")
+        colorValue = "E"
     }
     
     @IBAction func changeStyleA(_ sender: Any) {
         //colorS.changeToStyleA(imageTextField, style:"A")
         colorS.changeStyle(textField: imageTextField, style: "A")
-        styleArray.append("A")
+        styleValue = "A"
     }
     
     @IBAction func changeStyleB(_ sender: Any) {
         colorS.changeStyle(textField: imageTextField, style: "B")
-        styleArray.append("B")
+        styleValue = "B"
     }
     
     @IBAction func changeStyleC(_ sender: Any) {
         colorS.changeStyle(textField: imageTextField, style: "C")
-        styleArray.append("C")
+        styleValue = "B"
     }
+    
+    
     
     @IBAction func nextButtonTouched(_ sender: Any) {
         let w3 :  WriteViewController3 = storyboard?.instantiateViewController(withIdentifier:"write3") as! WriteViewController3
         wData2.append(imageTextField.text)
-        wData2.append(colorArray.popLast()!)
-        wData2.append(styleArray.popLast()!)
+        wData2.append(styleValue)
+        wData2.append(colorValue)
         w3.wData1 = wData1
         w3.wData2 = wData2
         DataStructS.sharedInstance.UIColorArray.append(writeColorA)

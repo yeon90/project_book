@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+import RealmSwift
 class WriteViewController3: UIViewController {
     @IBOutlet weak var mainText: UITextView!
     
@@ -16,6 +16,7 @@ class WriteViewController3: UIViewController {
     var wData3 : Array<Any>
     var wData : Array<Array<Any>>
     var dataStructA : DataStruct
+    var dataStructR = DataStructR()
     
     required init?(coder aDecoder: NSCoder) {
      
@@ -24,7 +25,7 @@ class WriteViewController3: UIViewController {
         wData3 = []
         wData = []
         dataStructA = DataStruct()
-        
+       
         super.init(coder: aDecoder)
     }
     
@@ -35,16 +36,21 @@ class WriteViewController3: UIViewController {
 
     @IBAction func saveButtonTouched(_ sender: Any) {
         wData3.append(mainText.text)
-       
-    
         dataStructA.w1_bookTitle = wData1[0] as! String
         dataStructA.w1_date = wData1[1] as! String
         dataStructA.w1_page = wData1[2] as! String
         dataStructA.w2_imageText = wData2[0] as! String
-        dataStructA.w2_background = wData2[1] as! String
-        dataStructA.w2_style = wData2[2] as! String
-        dataStructA.w3_mainText = wData3[0] as! String
+        dataStructA.w2_style = wData2[1] as! String 
+       
+        switch wData2[2] {
+        case is String :
+            dataStructA.w2_background = wData2[2] as! String
+        default :
+            dataStructA.w2_backgroundimage = wData2[2] as! UIImage
+        }
+          dataStructA.w3_mainText = wData3[0] as! String
         DataStructS.sharedInstance.wData.insert(dataStructA , at: 0)
+        
         
     }
   

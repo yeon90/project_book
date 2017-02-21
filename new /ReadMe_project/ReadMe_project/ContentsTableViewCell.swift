@@ -15,7 +15,8 @@ class ContentsTableViewCell: UITableViewCell {
     @IBOutlet weak var pageLabel: UILabel!
     @IBOutlet weak var imageBackground: UIView!
     @IBOutlet weak var imageText: UITextView!
-
+    @IBOutlet weak var imageBackgroundImage: UIImageView!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
